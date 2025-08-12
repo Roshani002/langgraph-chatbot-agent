@@ -62,6 +62,7 @@ LANGSMITH_API_KEY=<your-langsmith-key>
 ---
 
 ## 🌐 Running in LangGraph Studio
+
 Follow steps: https://langchain-ai.lang.chat/langgraph/tutorials/langgraph-platform/local-server/
 (for run in langgraph studio docker is required)
 ---
