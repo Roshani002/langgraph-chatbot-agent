@@ -82,11 +82,10 @@ source venv/bin/activate
 ### 3️⃣ Install dependencies
 Since this project uses **LangGraph** with dependencies defined in `langgraph.json`, you do not need a `requirements.txt` file.
 - install dependencies as listed inside `langgraph.json`.
-```
 
 ### 4️⃣ Set up environment variables
 Create a `.env` file in the root folder and add your API keys:
-```
+```bash
 GOOGLE_API_KEY=your_google_api_key
 TAVILY_API_KEY=your_tavily_api_key
 LANGSMITH_API_KEY=your_langsmith_api_key
