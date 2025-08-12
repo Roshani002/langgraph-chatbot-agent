@@ -48,25 +48,6 @@ Chatbot_Agent/
 
 ---
 
-
-## 🔧 Configuration
-
-Create a file named `.env` in the project root:
-
-```ini
-GOOGLE_API_KEY=<your-google-gemini-key>
-TAVILY_API_KEY=<your-tavily-api-key>
-LANGSMITH_API_KEY=<your-langsmith-key>
-```
-
----
-
-## 🌐 Running in LangGraph Studio
-
-Follow steps: https://langchain-ai.lang.chat/langgraph/tutorials/langgraph-platform/local-server/
-(for run in langgraph studio docker is required)
----
-
 ## 🔍 How It Works
 
 - **Memory**  
@@ -80,4 +61,55 @@ Follow steps: https://langchain-ai.lang.chat/langgraph/tutorials/langgraph-platf
   - **ask_user_for_clarification**: targeted follow-up questions  
 
 ---
+
+## 🚀 How to Run Locally
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yourusername/chatbot-agent.git
+cd chatbot-agent
+```
+
+### 2️⃣ Create and activate a virtual environment
+```bash
+python -m venv venv
+# On Windows
+venv\Scripts\activate
+# On Mac/Linux
+source venv/bin/activate
+```
+
+### 3️⃣ Install dependencies
+Since this project uses **LangGraph** with dependencies defined in `langgraph.json`, you do not need a `requirements.txt` file.
+- install dependencies as listed inside `langgraph.json`.
+```
+
+### 4️⃣ Set up environment variables
+Create a `.env` file in the root folder and add your API keys:
+```
+GOOGLE_API_KEY=your_google_api_key
+TAVILY_API_KEY=your_tavily_api_key
+LANGSMITH_API_KEY=your_langsmith_api_key
+```
+
+### 5️⃣ Prepare the code for local run
+- **Uncomment** the `while True` interactive loop in `agent.py`.
+- **Uncomment** the import of `dotenv` and `load_dotenv()` in both `agent.py` and `tools.py`.
+
+### 6️⃣ Run the chatbot agent
+```bash
+python agent/agent.py
+```
+
+This will start the chatbot in an interactive terminal session.
+
+---
+
+## 🌐 Running in LangGraph Studio
+
+Follow steps: https://langchain-ai.lang.chat/langgraph/tutorials/langgraph-platform/local-server/
+(for run in langgraph studio docker is required)
+---
+
+
 
