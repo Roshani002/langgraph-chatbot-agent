@@ -105,8 +105,8 @@ This will start the chatbot in an interactive terminal session.
 ---
 
 ## 🌐 Running in LangGraph Studio
-
-Follow steps: https://langchain-ai.lang.chat/langgraph/tutorials/langgraph-platform/local-server/
+- Follow steps: https://langchain-ai.lang.chat/langgraph/tutorials/langgraph-platform/local-server/
+  
 (for run in langgraph studio docker is required)
 ---
 
